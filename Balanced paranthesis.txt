@@ -1,0 +1,16 @@
+#code to find balanced or unbalanced in stack
+param='((())()))('
+stack=[]
+for i in param:
+    if not stack:
+        stack.append(i)
+    else:
+        val=stack.pop()
+        if((i==val) or (i!=')' and val!='(')):
+            stack.append(val)
+            stack.append(i)
+            
+if(len(stack)==0):
+    print("Balanced")
+else:
+    print("Unbalanced",stack)
