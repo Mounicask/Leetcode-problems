@@ -1,0 +1,12 @@
+def inverse_tree(root):
+    if root is None:
+       return None
+    if root.left:
+        inverse_tree(root.left) 
+    if root.right:
+        inverse_tree(root.right)
+    temp = root.left
+    root.left = root.right
+    root.right = temp
+    return root
+    
