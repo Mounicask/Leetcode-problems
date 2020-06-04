@@ -1,0 +1,15 @@
+def left_view(root):
+  queue = [root]
+  while queue:
+        check = True
+        count = len(queue)
+        i = 0
+        while i<count:
+            root = queue.pop(0)
+            if check:
+                print(root.val)
+                check= False
+            if root.left:
+                  queue.append(root.left)
+            if root.right:
+                  queue.append(root.right)
