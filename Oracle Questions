@@ -1,0 +1,30 @@
+Oracle:
+
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_no_distinct
+
+Min, count and group by :
+
+selct min(count),coun from (select count(country) as count,country as coun from customers group by country);
+
+DISTINCT: Used to get unique values
+
+ORDER BY: Used for Ascending/ Descending order 
+
+WHERE : To filter each and every  records, it selects  records before grouping 
+HAVING: To filter the records in a group    using aggregate functions like count,min,max,avg,sum 
+		We need to use Group by along with having 
+		It filter the records only after grouping . 
+Eg: select country from customers group by customer_id having max(customer_id);
+
+IN : To specify multiple values in a WHERE clause.
+
+BETWEEN : values between , even can be applied to varchar.
+		Syntax: select country from customers between 'England' and 'India';
+
+
+DELETE 													TRUNCATE
+
+Delete the table rows							Deletes the entire structure along with records
+Can perform where to filter the records 		Can't perform where 
+can ROLLBACK after delete						Can't perform ROLLBACK
+It is DML										It is DDL
