@@ -28,3 +28,6 @@ Delete the table rows							Deletes the entire structure along with records
 Can perform where to filter the records 		Can't perform where 
 can ROLLBACK after delete						Can't perform ROLLBACK
 It is DML										It is DDL
+
+1068. Product Sales Analysis I
+select p.product_name ,s.year ,s.price from Sales s join Product p on s.product_id = p.product_id;
