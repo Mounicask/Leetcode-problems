@@ -29,5 +29,13 @@ Can perform where to filter the records 		Can't perform where
 can ROLLBACK after delete						Can't perform ROLLBACK
 It is DML										It is DDL
 
+TO_CHAR: Converting date to specific format.
+	Syntax: to_char(date_val,format), Eg: to_char(event_date,'YYYY-MM-DD')
+Min: We can also get min / max of two dates using group by 
+
 1068. Product Sales Analysis I
 select p.product_name ,s.year ,s.price from Sales s join Product p on s.product_id = p.product_id;
+
+511. Game Play Analysis I
+select player_id, min(to_char(event_date,'YYYY-MM-DD')) as first_login from activity group by player_id;
+
