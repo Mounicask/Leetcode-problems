@@ -3,3 +3,15 @@
 3. Diamond problem? Multiple inheritance in Java
 4. Diff between throw and throws. Can we use both at a time?
 5. Abstarct class and interface
+
+
+Problem Solving
+There are 40+ questions which were asked to me in 55 interviews. I can very well guarantee you that, for a testing position you've high chances of encountering the same questions. But, you can expect the same problems in your initial rounds of problem-solving from a developer standpoint. Anyhow, preparing all these questions would help you to solve the variants of a different question. Keep all the steps and algorithms thorough so that, you won't get choked while facing a new problem.
+Core JAVA and Collections
+You very well knew, that there might be famous questions on this topic at each section of the subject, still, I would suggest you brush up the questions I've given and then start with the new set of questions. Most importantly, the hashmap internal implementation, the difference between ArrayList and LinkedList and questions based on JVM and Garbage Collector won't fade off from the interview panels. So prepare them thoroughly as you shouldn't think when it asked.
+OOPS
+Again, prepare from the material first, and there's nothing much to talk about it. You need to know everything. Literally!
+Testing
+Being a developer, you may not require that section. But if you're using TestNG for unit testing, then I would suggest you touch the same. If you're preparing for a testing profile, go through everything I've attached.
+SQL Queries
+Though the importance of this topic was lesser while appearing for interviews, this particular topic has a different set of questions ranging from theory to real-world SQL queries. Prepare the Venn Diagrams of all Outer JOINS, the ACID properties, the DB schema design and most importantly, the JOIN queries and differentiation of the various keys used for designing a DB. Though the questions would help the same for your preparation you gotta dive deep here.
