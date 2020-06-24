@@ -1,0 +1,7 @@
+def bfs(root):
+  queue = [root]
+  while queue:
+      interim = [i.val for i in queue]
+      queue = [c for n in queue for c in [n.left,n.right] if c]
+      final_list.append(interim)
+  return final_list
