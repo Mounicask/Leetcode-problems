@@ -1,0 +1,19 @@
+Intersection/Merge point of two lineked list:
+
+def merge_point(head1,head2):
+        if head1 is None and head2 is None:
+              return None
+        temp1 = head1
+        temp2 = head2
+        d = []
+        while temp1:
+            d.append(temp1)
+            temp1 = temp1.next
+        while temp2:
+            if temp2 in d:
+                return temp2
+            temp2 = temp2.next
+            
+            
+We should not compare with the temp1.data and temp2.data
+We need to compare with temp1 and temp2. Here, we are comparing with node pointer, so the id will be same
