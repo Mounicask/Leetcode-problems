@@ -1,0 +1,17 @@
+We use two pointers - Slow ptr and fast ptr. 
+Slow ptr moves one step, Fast ptr moves two steps .
+Certain point, Both the ptrs will be the same at when there is a loop.
+Otherwise, the fast ptr will be None. ( While condition)
+
+def detect_cycle(head):
+      if head is None or head.next is None:
+            return False
+      slow = head
+      fast = head
+      while fast != None and fast.next!= None:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                  return True
+      #If there is no loop, the fast will be none and while loop ends
+      return False
