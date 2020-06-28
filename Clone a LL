@@ -1,0 +1,17 @@
+Copy List with Random Pointer
+Basically a doubly linked list. We need create a new LL with same next pointer and previous pointer. (Deep copy)
+We do it using recursion
+
+def cloneLL(head):
+    self.visited = {}
+    def helper(head):
+        if not head:
+            return None
+        if head in self.visited:
+              return self.visited[head]
+        node = Node(head.val,None,None)
+        self.visited[head] = node
+        node.next = helper(head.next)
+        node.random = helper(head.random)
+        return node
+    return helper(head)
