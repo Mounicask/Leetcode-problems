@@ -1,0 +1,21 @@
+First find middle element using Two pointers- first and second ptr
+Add the elements till middle in a STACK.
+If the length of LL is odd, then add the middle element in STACK.
+Then,pop every element from STACK and compare it with first_ptr
+
+def palindrome(head):
+      if not head or not head.next:
+            return True
+      first = second = head
+      stack = []
+      while second and second.next:
+            stack.append(first.val)
+            first = first.next
+            second = second.next.next
+      if second:
+          stack.append(first.val)
+      while first:
+            if stack.pop() != first.val:
+                    return False
+            first = first.next
+      return True    
