@@ -1,3 +1,35 @@
+BEST SOLUTION:
+    
+def add(l1,l2):
+      if l1 is None:
+            return l2
+      if l2 is None:
+              return l1
+      carry = 0
+      sum_val = 0
+      dummy = 0
+      while l1 or l2:
+            m,n = 0,0
+            if l1:
+                m = l1.val
+                l1 = l1.next
+            if l2:
+                n = l2.val
+                l2 = l2.next
+            sum_val = m + n +carry
+            carry = 1 if sum_val>=10 else 0
+            node_val = sum_val % 10
+            if dummy is None:
+                dummy = ListNode(node_val)
+                temp = dummy
+            else:
+                temp.next = ListNode(node_val)
+                temp = temp.next
+        if carry:
+            temp.next = ListNode(carry)
+            temp.next.next = None
+        return dummy
+                
 #Add two numbers represented by linked lists
 
 class Node():
